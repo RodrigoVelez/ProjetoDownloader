@@ -35,9 +35,6 @@ object frmPrincipal: TfrmPrincipal
       EditLabel.Height = 13
       EditLabel.Caption = 'Link para download'
       TabOrder = 0
-      Text = 
-        'https://download.oracle.com/otn-pub/otn_software/db-express/Orac' +
-        'leXE213_Win64.zip'
     end
     object btnIniciarDownload: TBitBtn
       Left = 510
@@ -278,8 +275,6 @@ object frmPrincipal: TfrmPrincipal
     Align = alBottom
     BevelInner = bvLowered
     TabOrder = 3
-    ExplicitTop = 172
-    ExplicitWidth = 433
     DesignSize = (
       697
       41)
