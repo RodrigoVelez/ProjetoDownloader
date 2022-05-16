@@ -24,6 +24,7 @@ resourcestring
   rsEgineErrorekServerOutput      = 'EDB.015-Texto de saída de dados do servidor';
   rsEgineErrorekArrExecMalfunc    = 'EDB.016-Uma requisição de atualização em massa falhou por causa de falha do sistema ou de alguma integridade de banco de dados';
   rsEgineErrorekInvalidParams     = 'EDB.017-Parâmetro(s) inválido(s)';
+  rsTabelaInvalida                = 'EDB.018-Consulta inválida.';
 
   //Erros de DML de banco de dados
   rsDMLErrorInsercaoRowsAffectedZero    = 'EG.001-Nenhum registro foi gravado.';

@@ -11,7 +11,7 @@ type
     ['{80E8BE00-45C9-401C-A87F-CEB78DF1FD35}']
     procedure Gravar(pArquivo: IArquivo);
     procedure Atualizar(pArquivo: IArquivo);
-    function RetornarListaDownloads(): TList<IArquivo>;
+    procedure RetornarListaDownloads(pLista: TList<IArquivo>);
     function RetornarCodigoDownloadGravado(): Integer;
   end;
 

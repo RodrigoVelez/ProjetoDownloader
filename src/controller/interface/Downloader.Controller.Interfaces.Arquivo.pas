@@ -11,7 +11,7 @@ type
   IControllerArquivo = interface(ISubject)
     ['{5BA56B61-66B1-4D01-8CDB-0A754D784F90}']
 
-    function RetornarHistoricoListaDownloadJaExecutados(): TList<IArquivo>;
+    procedure RetornarHistoricoListaDownloadJaExecutados(pLista: TList<IArquivo>);
     function RetornarListaDownloasEmExecucao(): TList<IArquivo>;
 
     procedure AdicionarDownloadListaDeExecucao(const pUrl: string);

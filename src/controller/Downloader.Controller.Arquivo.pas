@@ -37,7 +37,7 @@ type
 
     procedure AdicionarObserver(pObserver: IObserverDownload);
 
-    function RetornarHistoricoListaDownloadJaExecutados(): TList<IArquivo>;
+    procedure RetornarHistoricoListaDownloadJaExecutados(pLista: TList<IArquivo>);
     function RetornarListaDownloasEmExecucao(): TList<IArquivo>;
     procedure AdicionarDownloadListaDeExecucao(const pUrl: string);
 
@@ -205,12 +205,12 @@ begin
   Result := FListaArquivosDownload;
 end;
 
-function TControllerArquivo.RetornarHistoricoListaDownloadJaExecutados: TList<IArquivo>;
+procedure TControllerArquivo.RetornarHistoricoListaDownloadJaExecutados(pLista: TList<IArquivo>);
 var
   LArquivoDAO: IArquivoDAO;
 begin
   LArquivoDAO := TArquivoDAO.New();
-  Result := LArquivoDAO.RetornarListaDownloads();
+  LArquivoDAO.RetornarListaDownloads(pLista);
 end;
 
 end.

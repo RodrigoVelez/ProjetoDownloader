@@ -54,8 +54,10 @@ var
   lController: IControllerArquivo;
 begin
   lController := TControllerArquivo.New();
-  lLista      := lController.RetornarHistoricoListaDownloadJaExecutados();
+  lLista := TList<IArquivo>.Create();
   try
+    lController.RetornarHistoricoListaDownloadJaExecutados(lLista);
+
     if lLista.Count > 0 then
       sgridListaDownloads.RowCount := lLista.Count;
 
